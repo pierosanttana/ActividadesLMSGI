@@ -1,0 +1,15 @@
+.iconoLista {
+    list-style-image:url(comprobado.png);   
+}
+
+.mayusculaLista {
+    list-style-type:upper-alpha;
+}
+
+.ulAnidada {
+    list-style-type:square;
+}
+
+.ulAnidada ol{
+    list-style-type:lower-roman;
+}
