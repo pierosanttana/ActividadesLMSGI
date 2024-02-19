@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Ciudad codigo_identificador="AA-44" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation= "_01_ciudad_XSD.xsd">
+<nombre>Madris</nombre>
+<poblacion>101</poblacion>
+<alcalde edad="33">
+<nombre>Alcalde</nombre>
+<apellido>Apellido Apellido</apellido>
+<telefono>+3466556763</telefono>
+<tarjeta_credito>6859433475303</tarjeta_credito>
+<email>ejemplo@gmail.com</email>
+</alcalde>
+<funcionarios>
+    <funcionario id="funcio2">
+        <nombreYApellido>Piero Santana</nombreYApellido>
+        <codigo_postal>28100</codigo_postal>
+        <fecha_nacimiento>10/12/2000</fecha_nacimiento>
+        <password>C13!A34@C12!</password>
+        <cuenta_bancaria>ES9933 3339 3332 2220</cuenta_bancaria>
+    </funcionario>
+
+    <funcionario id="funcio3">
+        <nombreYApellido>Don Santana</nombreYApellido>
+        <codigo_postal>28100</codigo_postal>
+        <fecha_nacimiento>10/12/2000</fecha_nacimiento>
+        <password>C13!A34@C12!</password>
+        <cuenta_bancaria>ES9933 3339 3332 2220</cuenta_bancaria>
+    </funcionario>
+
+</funcionarios>
+
+
+</Ciudad>
