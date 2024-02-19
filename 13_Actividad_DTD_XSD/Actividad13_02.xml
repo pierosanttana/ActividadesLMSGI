@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation= "_01_biblioteca_XSD.xsd">
+  <nombre>Biblioteca Central</nombre>
+  <seccion>
+    <libro>
+      <titulo>Don Quijote de la Mancha</titulo>
+      <autor>Miguel de Cervantes</autor>
+      <resumen>Las aventuras de un caballero enloquecido y su fiel escudero.</resumen>
+      <editorial>
+        <nombre>Ediciones Quixote</nombre>
+        <ciudad>Madrid</ciudad>
+      </editorial>
+    </libro>
+    <libro>
+      <titulo>Orgullo y prejuicio</titulo>
+      <autor>Jane Austen</autor>
+      <anio>1813</anio>
+      <resumen>La compleja relación entre Elizabeth Bennet y Mr. Darcy en la sociedad inglesa del siglo XIX.</resumen>
+      <editorial>
+        <nombre>Ediciones Bennet</nombre>
+        <ciudad>Londres</ciudad>
+      </editorial>
+    </libro>
+  </seccion>
+  <seccion>
+    <libro>
+      <titulo>La metamorfosis</titulo>
+      <autor>Franz Kafka</autor>
+      <anio>1915</anio>
+      <resumen>La transformación de Gregor Samsa en un insecto y su impacto en la familia.</resumen>
+      <editorial>
+        <nombre>Ediciones Kafka</nombre>
+        <ciudad>Praga</ciudad>
+      </editorial>
+    </libro>
+  </seccion>
+  <seccion>
+    <libro>
+      <titulo>Los miserables</titulo>
+      <autor>Victor Hugo</autor>
+      <resumen>La historia de Jean Valjean y su redención en la Francia del siglo XIX.</resumen>
+      <editorial>
+		    <codigo>LM789OP</codigo>
+        <nombre>Ediciones Libertad</nombre>
+        <ciudad>París</ciudad>
+      </editorial>
+    </libro>
+    <libro>
+      <titulo>Moby Dick</titulo>
+      <autor>Herman Melville</autor>
+      <anio>1851</anio>
+      <resumen>La obsesión del capitán Ahab por capturar la ballena blanca.</resumen>
+      <editorial>
+        <nombre>Ediciones Mar</nombre>
+        <ciudad>Nueva York</ciudad>
+      </editorial>
+    </libro>
+  </seccion>
+</biblioteca>

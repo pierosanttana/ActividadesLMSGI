@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE empresa [
+    <!ELEMENT empresa (nombre, NIF, espaniol, capital_social, direccion, empleados)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT NIF (#PCDATA)>
+    <!ELEMENT espaniol (#PCDATA)>
+    <!ELEMENT capital_social (#PCDATA)>
+    <!ELEMENT direccion (tipo_via, nombre_via, CP, pais)>
+    <!ELEMENT tipo_via (#PCDATA)>
+    <!ELEMENT nombre_via (#PCDATA)>
+    <!ELEMENT CP (#PCDATA)>
+    <!ELEMENT pais (#PCDATA)>
+    <!ELEMENT empleados (empleado+)>
+    <!ELEMENT empleado (nombre, apellidos+, DNI, extranjero, fecha_nacimiento, salario, direccion+, casado?)>
+    <!ELEMENT apellidos (#PCDATA)>
+    <!ELEMENT DNI (#PCDATA)>
+    <!ELEMENT extranjero (#PCDATA)>
+    <!ELEMENT fecha_nacimiento (#PCDATA)>
+    <!ELEMENT salario (#PCDATA)>
+    <!ELEMENT casado (#PCDATA)>
+    <!ENTITY espania "ESPAÑA">
+]>
+
+<empresa>
+    <nombre>Upgrade</nombre>
+    <NIF>NI556745634</NIF>
+    <espaniol>no</espaniol>
+    <capital_social> euros </capital_social>
+    <direccion>
+        <tipo_via>Tipo de vía</tipo_via>
+        <nombre_via>Nombre de la vía</nombre_via>
+        <CP>Código postal</CP>
+        <pais>País</pais>
+    </direccion>
+    <empleados>
+        <empleado>
+            <nombre>Piero</nombre>
+            <apellidos>Santana</apellidos>
+            <DNI>N765356X</DNI>
+            <extranjero>Si</extranjero>
+            <fecha_nacimiento>10/12/1993</fecha_nacimiento>
+            <salario>10000</salario>
+            <direccion>
+                <tipo_via>Tipo de vía</tipo_via>
+                <nombre_via>Nombre de la vía</nombre_via>
+                <CP>28100</CP>
+                <pais>&espania;</pais>
+            </direccion>
+            <casado>si</casado>
+        </empleado>
+        <empleado>
+            <nombre>Piero</nombre>
+            <apellidos>Santana</apellidos>
+            <DNI>N765356X</DNI>
+            <extranjero>Si</extranjero>
+            <fecha_nacimiento>10/12/1993</fecha_nacimiento>
+            <salario>10000</salario>
+            <direccion>
+                <tipo_via>Tipo de vía</tipo_via>
+                <nombre_via>Nombre de la vía</nombre_via>
+                <CP>28100</CP>
+                <pais>&espania;</pais>
+            </direccion>
+            <casado>si</casado>
+        </empleado>
+        <!-- Puedes añadir más empleados aquí -->
+    </empleados>
+</empresa>

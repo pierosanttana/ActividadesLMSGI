@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<empresa xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation= "_01_empresa.xsd">
+    <nombre>Nombrea</nombre>
+    <NIF>NI556745634</NIF>
+    <espaniol>false</espaniol>
+    <capital_social>
+        <euros>100.50</euros>
+    </capital_social>
+    <direccion>
+        <tipo_via>Tipo de vía</tipo_via>
+        <nombre_via>Nombre de la vía</nombre_via>
+        <CP>28100</CP>
+        <pais>País</pais>
+    </direccion>
+    <empleados>
+        <empleado>
+            <nombre>Piero</nombre>
+            <apellidos>Santana</apellidos>
+            <apellidos>La Rosa</apellidos>
+            <DNI>N765356X</DNI>
+            <extranjero>false</extranjero>
+            <fecha_nacimiento>1993-10-12</fecha_nacimiento>
+            <salario>10000</salario>
+            <direccion>
+                <pais>España</pais>
+                <direccion_completa>C\Gran via 67, Madrid</direccion_completa>
+            </direccion>
+            <casado>true</casado>
+        </empleado>
+        <empleado>
+            <nombre>Piero</nombre>
+            <apellidos>Santana</apellidos>
+            <apellidos>Santana</apellidos>
+            <DNI>N765356X</DNI>
+            <extranjero>false</extranjero>
+            <fecha_nacimiento>2000-09-10</fecha_nacimiento>
+            <salario>10000</salario>
+            <direccion>
+                <direccion_completa>C\Gran via 67, Madrid</direccion_completa>
+                <pais>España</pais>
+            </direccion>
+            <casado>false</casado>
+        </empleado>
+        <!-- Puedes añadir más empleados aquí -->
+    </empleados>
+</empresa>
