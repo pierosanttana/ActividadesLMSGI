@@ -3,8 +3,8 @@
     "nombre" : "God of War",
     "anio_creacion" : 1999,
     "puntaje" : 8.9,
-    "programadores" : {
-        "programador" : {
+    "programadores" :[ 
+        { "programador" : {
             "id" : "dev1",
             "nombre" : "Jack",
             "primer_apellido" : "Dorsey",
@@ -13,15 +13,16 @@
                 "dia" : 10,
                 "mes" : 12,
                 "anio" : 1985
-            },
+                },
             "direccion" : {
                 "tipo_via" : "Market Street",
                 "nombre_via" : "Suite 900, San Francisco",
                 "cp" : 94103,
                 "pais" : "Estados unidos"
+                }
             }
         },
-        "programador2" : {
+        {"programador2" : {
             "id" : "dev2",
             "nombre" : "Evan",
             "primer_apellido" : "Williams",
@@ -37,8 +38,9 @@
                 "cp" : 94103,
                 "pais" : "Estados unidos"
             }
+            }
         }
-        },
+        ],
     "compania" : {
         "id" : "TWTR",
         "nombre" : "TWITTER",
