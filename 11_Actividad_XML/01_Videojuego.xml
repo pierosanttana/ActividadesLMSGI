@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<videojuego id="vj01">
+    <nombre>God of War</nombre>
+    <creacion anio="1999"/>
+    <nota puntaje="8.9"/>
+    <programadores>
+        <programador id="dev01">
+            <nombre>Jack </nombre>
+            <primer_apellido>Dorsey</primer_apellido>
+            <DNI>95647534X</DNI>
+            <fecha_nacimiento>
+                <dia>10</dia>
+                <mes>12</mes>
+                <anio>1985</anio>
+            </fecha_nacimiento>
+            <direccion>
+                <tipo_via>Market Street</tipo_via>
+                <nombre_via>Suite 900, San Francisco</nombre_via>
+                <codigo_postal>94103</codigo_postal>
+                <pais>Estados Unidos</pais>
+            </direccion>
+        </programador>
+        <programador id="dev02">
+            <nombre>Evan</nombre>
+            <primer_apellido>Williams</primer_apellido>
+            <DNI>85487332Y</DNI>
+            <fecha_nacimiento>
+                <dia>11</dia>
+                <mes>12</mes>
+                <anio>1974</anio>
+            </fecha_nacimiento>
+            <direccion>
+                <tipo_via>Market Street</tipo_via>
+                <nombre_via>Suite 900, San Francisco</nombre_via>
+                <codigo_postal>94103</codigo_postal>
+                <pais>Estados Unidos</pais>
+            </direccion>
+        </programador>
+    </programadores>
+    <compañia id="TWTR">
+        <nombre>TWITTER</nombre>
+        <NIF>F4536236</NIF>
+        <direccion>
+            <tipo_via>Calle</tipo_via>
+            <nombre_via>Rafael Calvo 18 1 PLANTA</nombre_via>
+            <codigo_postal>28010</codigo_postal>
+            <pais>España</pais>
+        </direccion>
+    </compañia>
+    <pagina_web>
+        <![CDATA[
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        </head>
+        <body>
+            <div  style="text-align: center;">
+            <h1>¡Bienvenido Guerrero, tu destino te espera!</h1>
+            <h2 style="color: red;">GOD OF WAR</h2>
+            <img src="https://assetsio.reedpopcdn.com/god-of-war-walkthrough-guide-5004-1524154731667.jpg?width=1600&height=900&fit=crop&quality=100&format=png&enable=upscale&auto=webp" alt="imagen_god_of_war">
+            </div>
+        </body>
+        </html>
+        ]]>
+    </pagina_web>
+</videojuego>
