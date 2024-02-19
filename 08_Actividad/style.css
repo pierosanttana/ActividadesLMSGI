@@ -1,0 +1,42 @@
+body {
+background-image: url(img/fondomatrix.jpg);
+background-size: cover;
+}
+
+h1{
+    color: rgb(220, 90, 90);
+    text-align: center;
+}
+
+section {
+    color: rgb(191, 191, 191);
+    border: 2px solid white;
+}
+
+.primer_sec h2{
+    font-size: 10px;
+}
+
+.segunda_sec h2{
+    font-size: 2em;
+}
+
+.segundo_art{
+    color: yellow;
+}
+
+.primer_art{
+    width: 60%;
+}
+.primer_art img{
+    width: 100%;
+}
+
+.segundo_art{
+    width: 500px;
+}
+
+.segundo_art img{
+    width: 500px;
+}
+
