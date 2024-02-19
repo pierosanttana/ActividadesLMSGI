@@ -1,0 +1,43 @@
+.listaPrimerArt{
+    color: white;
+    background-color: #f0f0f0;
+}
+
+.listaSegundoArt{
+    color: blue;
+    background-color: red;
+}
+
+header {
+    color: yellow;
+    background-color: black;
+}
+
+footer{
+    background-color: darkblue;
+    color: white;
+}
+
+.titulo {
+    color: green;
+}
+
+h3.subtitulo{
+    background-color: coral;
+}
+
+a{
+    color: white;
+}
+
+#nosotros{
+    color: blue;   
+}
+
+.contacto{
+    color: blue;
+}
+
+p.textoContacto {
+    color: red;
+}
