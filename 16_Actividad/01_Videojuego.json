@@ -1,0 +1,55 @@
+{"videojuego" : {
+    "id" : "vj01",
+    "nombre" : "God of War",
+    "anio_creacion" : 1999,
+    "puntaje" : 8.9,
+    "programadores" : {
+        "programador" : {
+            "id" : "dev1",
+            "nombre" : "Jack",
+            "primer_apellido" : "Dorsey",
+            "dni" : "95647534X",
+            "fecha_nacimiento" : {
+                "dia" : 10,
+                "mes" : 12,
+                "anio" : 1985
+            },
+            "direccion" : {
+                "tipo_via" : "Market Street",
+                "nombre_via" : "Suite 900, San Francisco",
+                "cp" : 94103,
+                "pais" : "Estados unidos"
+            }
+        },
+        "programador2" : {
+            "id" : "dev2",
+            "nombre" : "Evan",
+            "primer_apellido" : "Williams",
+            "dni" : "85487332Y",
+            "fecha_nacimiento" : {
+                "dia" : 11,
+                "mes" : 12,
+                "anio" : 1974
+            },
+            "direccion" : {
+                "tipo_via" : "Market Street",
+                "nombre_via" : "Suite 900, San Francisco",
+                "cp" : 94103,
+                "pais" : "Estados unidos"
+            }
+        }
+        },
+    "compania" : {
+        "id" : "TWTR",
+        "nombre" : "TWITTER",
+        "nif" : "F4536236",
+        "direccion" : {
+            "tipo_via" : "Calle",
+            "nombre_via" : "Rafael Calvo 18 1 PLANTA",
+            "cp" : 28010,
+            "pais" : "España"
+        }
+    }
+
+    }
+}
