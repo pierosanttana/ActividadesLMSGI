@@ -1,0 +1,41 @@
+/*
+   HTML de posicionamiento
+    Crear un HTML en el que se usen los cuatro tipos de posicionamientos 
+    vistos en clase con etiquetas DIV. Observar los diferentes comportamientos.
+*/
+
+.estatico {
+    position: static;
+    width: 250px;
+    height: 250px;
+    background-color: green;
+    top: 100px;
+    left: 100px;
+}
+
+.relativo {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background-color: brown;
+    top: 100px;
+    left: 100px;
+}
+
+.absoluto {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background-color: blue;
+    top: 100px;
+    left: 100px;
+}
+
+.fix {
+    position: fixed;
+    width: 250px;
+    height: 250px;
+    background-color: blueviolet;
+    top: 200px;
+    left: 200px;
+}

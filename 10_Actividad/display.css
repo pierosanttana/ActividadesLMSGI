@@ -1,0 +1,34 @@
+* {
+    outline: 1px solid black;
+}
+.in {
+    display: inline;
+    width: 250px;
+    height: 250px;
+    background-color: green;
+}
+
+.blo {
+    display: block;
+    width: 250px;
+    height: 250px;
+    background-color: red;
+}
+
+.enlace_in {
+    display: inline;
+    width: 30px;
+    background-color: yellow;
+}
+.enlace_inblock {
+    display: inline-block;
+    width: 30px;
+    background-color: yellow;
+}
+
+.oculta {
+    display: none;
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+}

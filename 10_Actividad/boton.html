@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            width: 150px;
+            height: 50px;
+            background-color: red;
+        }
+
+        div {
+            display: none;
+            width: 200px;
+            height: 200px;
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="mostrarAlerta()" >No pulses aqui!</button>
+    <button onclick="ocultarEtiqueta()" >No pulses aqui!</button>
+    <br>
+    <div id="unDiv"></div>
+
+    <script>
+        function mostrarAlerta() {
+            alert('¡Bienvenido a JavaScript!');
+        }
+        function ocultarEtiqueta() {
+            var elemento = document.getElementById('unDiv');
+    
+            if (elemento.style.display == 'none' ||elemento.style.display == '' ) {
+            elemento.style.display = 'block';
+            } else {
+            elemento.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
