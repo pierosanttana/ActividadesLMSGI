@@ -1,0 +1,32 @@
+<!ELEMENT videojuego (nombre,creacion,nota,programadores,compañia,pagina_web)>
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT creacion EMPTY>
+<!ELEMENT nota EMPTY>
+<!ELEMENT programadores (programador+)>
+
+<!ELEMENT programador (nombre,primer_apellido,DNI,fecha_nacimiento,direccion)>
+<!ELEMENT primer_apellido (#PCDATA)>
+<!ELEMENT DNI (#PCDATA)>
+<!ELEMENT fecha_nacimiento (dia,mes,anio)>
+<!ELEMENT dia (#PCDATA)>
+<!ELEMENT mes (#PCDATA)>
+<!ELEMENT anio (#PCDATA)>
+
+<!ELEMENT direccion (tipo_via,nombre_via,codigo_postal,pais)>
+<!ELEMENT tipo_via (#PCDATA)>
+<!ELEMENT nombre_via (#PCDATA)>
+<!ELEMENT codigo_postal (#PCDATA)>
+<!ELEMENT pais (#PCDATA)>
+
+<!ELEMENT compañia (nombre,NIF,direccion)>
+<!ELEMENT NIF (#PCDATA)>
+
+<!ELEMENT pagina_web (#PCDATA)>
+
+<!-- Definimos los atributos -->
+<!ATTLIST videojuego id ID #REQUIRED>
+<!ATTLIST creacion anio CDATA #REQUIRED>
+<!ATTLIST nota puntaje CDATA #REQUIRED>
+<!ATTLIST programador id ID #REQUIRED>
+<!ATTLIST compañia id ID #REQUIRED>

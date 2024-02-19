@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE videojuego [
+<!ELEMENT videojuego (nombre,creacion,nota,programadores,compañia,pagina_web)>
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT creacion EMPTY>
+<!ELEMENT nota EMPTY>
+<!ELEMENT programadores (programador+)>
+
+<!ELEMENT programador (nombre,primer_apellido,DNI,fecha_nacimiento,direccion)>
+<!ELEMENT primer_apellido (#PCDATA)>
+<!ELEMENT DNI (#PCDATA)>
+<!ELEMENT fecha_nacimiento (dia,mes,anio)>
+<!ELEMENT dia (#PCDATA)>
+<!ELEMENT mes (#PCDATA)>
+<!ELEMENT anio (#PCDATA)>
+
+<!ELEMENT direccion (tipo_via,nombre_via,codigo_postal,pais)>
+<!ELEMENT tipo_via (#PCDATA)>
+<!ELEMENT nombre_via (#PCDATA)>
+<!ELEMENT codigo_postal (#PCDATA)>
+<!ELEMENT pais (#PCDATA)>
+
+<!ELEMENT compañia (nombre,NIF,direccion)>
+<!ELEMENT NIF (#PCDATA)>
+
+<!ELEMENT pagina_web (#PCDATA)>
+
+<!-- Definimos los atributos -->
+<!ATTLIST videojuego id ID #REQUIRED>
+<!ATTLIST creacion anio CDATA #REQUIRED>
+<!ATTLIST nota puntaje CDATA #REQUIRED>
+<!ATTLIST programador id ID #REQUIRED>
+<!ATTLIST compañia id ID #REQUIRED>
+]>
+<videojuego id="vj01">
+    <nombre>Call of Duty</nombre>
+    <creacion anio="2003"/>
+    <nota puntaje="8"/>
+    <programadores>
+        <programador id="dev01">
+            <nombre>Jason</nombre>
+            <primer_apellido>West</primer_apellido>
+            <DNI>65487641X</DNI>
+            <fecha_nacimiento>
+                <dia>10</dia>
+                <mes>12</mes>
+                <anio>1993</anio>
+            </fecha_nacimiento>
+            <direccion>
+                <tipo_via>Avenida</tipo_via>
+                <nombre_via>One Microsoft Way</nombre_via>
+                <codigo_postal>98052</codigo_postal>
+                <pais>Estados Unidos</pais>
+            </direccion>
+        </programador>
+        <programador id="dev02">
+            <nombre>Jasona</nombre>
+            <primer_apellido>West</primer_apellido>
+            <DNI>65487332X</DNI>
+            <fecha_nacimiento>
+                <dia>11</dia>
+                <mes>12</mes>
+                <anio>1994</anio>
+            </fecha_nacimiento>
+            <direccion>
+                <tipo_via>Avenida</tipo_via>
+                <nombre_via>One Microsoft Way</nombre_via>
+                <codigo_postal>98052</codigo_postal>
+                <pais>Estados Unidos</pais>
+            </direccion>
+        </programador>
+    </programadores>
+    <compañia id="MSFT">
+        <nombre>Microsoft</nombre>
+        <NIF>B78603495</NIF>
+        <direccion>
+            <tipo_via>Paseo</tipo_via>
+            <nombre_via>CLUB DEPORTIVO - PQ. EMPRESARIAL LA FINCA, 1 - EDIF. 1</nombre_via>
+            <codigo_postal>28223</codigo_postal>
+            <pais>España</pais>
+        </direccion>
+    </compañia>
+    <pagina_web>
+        <![CDATA[
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        </head>
+        <body>
+            <div  style="text-align: center;">
+            <h1>¡Bienvenido Soldado, tu destino te espera!</h1>
+            <h2 style="color: red;">CALL OF DUTY</h2>
+            <img src="https://cdn.akamai.steamstatic.com/steam/apps/2620/header.jpg?t=1691003894" alt="imagen_soldado_call_of_duty">
+            </div>
+        </body>
+        </html>
+        ]]>
+    </pagina_web>
+</videojuego>
