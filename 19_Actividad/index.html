@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function calcular_pares(n1,n2){
+            console.log(n1)
+            console.log(n2)
+            let resultado = 0;
+            for(let i = n1; i < n2; i++ ){
+                if(i % 2 == 0){
+                    resultado++;
+                }
+            }
+            document.getElementById("pares_resultado").value = resultado;
+        }
+
+        function conversor_temperatura(grados){
+            let select = document.getElementById("temp_select").value
+            console.log(select)
+            let resultado;
+            if(select == 1){
+                console.log("celsius a fahrenheit")
+               let fahrenheit = (grados * 9 / 5) + 32
+                resultado = fahrenheit
+            }else{
+                console.log("fahrenheit a celsius")
+                let celsius = (grados - 32) * 5 / 9
+                resultado = celsius
+            }
+            document.getElementById("temp_resultado").value = resultado;
+            
+        }
+
+        function generarRandom(){
+            numeroRandom = Math.floor(Math.random() * 10);
+            adivina_pista.placeholder = "Numero generado!"
+            console.log(numeroRandom)
+        }
+
+        function adivina_numero(n1){
+            if(n1 == numeroRandom){
+                adivina_pista.placeholder = "Lo haz adivinado!"
+            }else if(n1 < numeroRandom){
+                adivina_pista.placeholder = "Un poco más!"
+            }else if(n1 > numeroRandom){
+                adivina_pista.placeholder = "Un poco menos!"
+            }
+        }
+
+        function cambiarColor(color){
+            document.body.style.background = color;
+        }
+
+       function ingresar(user,password){
+
+            if(user == "goku" && password == "Vegeta777"){
+                alert("Bienvenido!")
+            } else{
+                alert("Usuario o Contraseña incorrecto!")
+            }
+        }
+
+        function numero_primo(n1){
+            let esPrimo = true;
+            console.log(n1)
+            if(n1 != ""){
+            if(n1 >= 0) {
+			for(let i = 2; i < n1/2; i++) {
+				if( n1 % i == 0) {
+					primo_resultado.placeholder = n1 + " no es primo."
+					esPrimo = false;
+					//break;
+				}
+			}		
+			if(esPrimo) {
+                primo_resultado.placeholder = "Es primo!"
+			}
+		}else {
+			primo_resultado.placeholder = "Debe ser positivo."
+		}
+
+        }else{
+            alert("Ingresa un numero!")
+        }
+    }
+    
+
+        function fibo(n1){
+            let valor1 = 0;
+		    let valor2 = 1;
+		    let sumaAnteriores;
+		
+		
+		for( let i = 0; i < n1; i++ ) {
+			area_fibo.placeholder += "-> " + valor1;
+			sumaAnteriores = valor1 + valor2;
+			valor1 = valor2;
+			valor2 = sumaAnteriores;	
+		}
+        }
+    </script>
+    <style>
+        div{
+            border: 1px solid black;
+            padding: 4px;
+            margin-bottom: 2px;
+        }
+        input,button{
+            margin: 3px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div>
+        <h2>Contador de números pares en un rango:</h2>
+        <label for="">Numero:</label><input type="number" name="" id="num1_rango" placeholder="numero 1">
+        <br>
+        <label for="">Numero:</label> <input type="number" name="" id="num2_rango" placeholder="numero 2">
+        <br>
+        <label for="">Resultado:</label><input type="number" name="" id="pares_resultado" placeholder="resultado" readonly>
+        <br>
+        <button type="button" onclick="calcular_pares(num1_rango.value , num2_rango.value)">Calcular</button>
+
+    </div>
+    <div>
+        <h2>Conversor de temperatura:</h2>
+        <select name="temp_select" id="temp_select">
+            <option value="1" selected>Celsius a Fahrenheit</option>
+            <option value="2">Fahrenheit a Celsius</option>
+        </select>
+        <br>
+        <label for="">Temperatura: </label><input type="text" name="" id="temp" placeholder="temperatura">
+        <br>
+        <label for="">Resultado: </label><input type="text" name="" id="temp_resultado" placeholder="resultado" readonly>
+        <br>
+        <button type="button" onclick="conversor_temperatura(parseInt(temp.value))">Convertir</button>
+    </div>
+    <div>
+        <h2>Juego adivina el número entre el 0 y 10(incluidos): </h2>
+        <input type="text" name="" id="adivina_num" placeholder="ingresa un numero">
+        <input type="text" id="adivina_pista" placeholder="" readonly>
+        <br>
+        <button onclick="generarRandom()">Generar Numero Aleatorio</button>
+        <button onclick="adivina_numero(adivina_num.value)">Probar</button>
+
+
+    </div>
+    <div>
+        <h2>Cambiar el color de la pantalla:</h2>
+        <input type="text" name="" id="hexa" placeholder="Hex #C2DFE6">
+        <button onclick="cambiarColor(hexa.value)">Cambia el color!</button>
+    </div>
+    <div>
+        <h2>Usuario y contraseña: </h2>
+        </label> <input type="text" name="" id="user" placeholder="Usuario">
+        <br>
+        <input type="password" name="" id="password" placeholder="Contraseña">
+        <br>
+        <button onclick="ingresar(user.value, password.value)">Ingresar</button>
+    </div>
+    <div>
+        <h2>Verificador de número primo:</h2>
+        <input type="text" name="" id="num_primo" placeholder="Numero">
+        <br>
+        <input type="text" name="" id="primo_resultado" placeholder="Resultado" readonly>
+        <br>
+        <button type="button" onclick="numero_primo(num_primo.value)">Comprobar</button>
+
+    </div>
+    <div>
+        <h2>Generador de secuencia Fibonacci:</h2>
+        <label for="">Ingresa la cantidad de secuencias que quieres ver:</label>
+        <br>
+        <input type="number" name="" id="num_fibo" placeholder="numero">
+        <button onclick="fibo(num_fibo.value)">Generar</button>
+        <br>
+        <textarea name="" id="area_fibo" cols="30" rows="10" readonly placeholder=""></textarea>
+
+    </div>
+
+</body>
+</html>

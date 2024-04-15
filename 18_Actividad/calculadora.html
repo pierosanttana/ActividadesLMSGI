@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+    
+        function suma(a,b){
+          var n1 = parseInt(a);
+          var n2 = parseInt(b);
+
+          resultado.value = n1 + n2;
+        }
+
+        function resta(a,b){
+          var n1 = parseInt(a);
+          var n2 = parseInt(b);
+
+          resultado.value = n1 - n2;
+          
+        }
+        function multiplicar(a,b){
+          var n1 = parseInt(a);
+          var n2 = parseInt(b);
+
+          resultado.value = n1 * n2;
+          
+        }
+        function dividir(a,b){
+          var n1 = parseInt(a);
+          var n2 = parseInt(b);
+
+          resultado.value = n1 / n2;
+          
+        }
+        
+    </script>
+</head>
+<body>
+    <label for="">número 1: </label><input id="numero1" type="text">
+    <br/>
+    <label for="">Número 2:</label><input id="numero2" type="text">
+    <br/>
+    <label for="">Resultado:</label><input id="resultado" type="text">
+    <br/>
+    <button onclick="suma(numero1.value, numero2.value)">Sumar</button>
+    <button onclick="resta(numero1.value, numero2.value)">Restar</button>
+    <button onclick="multiplicar(numero1.value, numero2.value)">Multiplicar</button>
+    <button onclick="dividir(numero1.value, numero2.value)">Dividir</button>
+</body>
+</html>
